@@ -18,8 +18,6 @@ with open('data_set.csv', 'w', newline='') as csvfile:
 			if div.find("span", class_="m-srp-card__title__bhk"):
 				dic['bedrooms']=div.find("span", class_="m-srp-card__title__bhk").text
 			for div in (div.find_all("div", class_="m-srp-card__summary__item")):
-				if div.find("div", class_="m-srp-card__summary__title").text == "society":
-					continue
 				if div.find("div", class_="m-srp-card__summary__title").text == "bathroom":
 					dic['bathrooms'] = div.find("div", class_="m-srp-card__summary__info").text
 				if div.find("div", class_="m-srp-card__summary__title").text == "furnishing":
