@@ -12,7 +12,7 @@ for i in range(30):
 			print(div.find("span", class_="m-srp-card__price").text)
 		else:
 			print("Call for price")
-		for div in (div.find_all("div", class_="m-srp-card__summary__item")):
+		for div in (div.find_all("div", class_="m-srp-card__summary__item"))[:4]:
 			print((div.find("div", class_="m-srp-card__summary__title").text), end=" ")
 			print(div.find("div", class_="m-srp-card__summary__info").text)
 	print("*"*50)
