@@ -14,7 +14,7 @@ with open('data_set.csv', 'w', newline='') as csvfile:
 	fieldnames = [ 'carpet_area', 'bedrooms', 'bathrooms', 'car_parking', 'furnishing', 'transaction_type','floor','total_floors', 'facing', 'overlooking', 'price', 'lat', 'long']
 	writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 	writer.writeheader()
-	for i in range(100):
+	for i in range(200):
 		source = requests.get(f'https://www.magicbricks.com/flats-in-mumbai-for-sale-pppfs/page-{i}').text
 		# source = requests.get('https://www.magicbricks.com/property-for-sale/residential-real-estate?proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment&Locality=Borivali-East,Borivali-West&cityName=Mumbai').text
 		soup = BeautifulSoup(source, 'lxml')

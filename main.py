@@ -35,5 +35,5 @@ for _ in range(100):
         best = acc
         with open("housing_prediction.pickle", "wb") as f:
             pickle.dump(linear, f)
-print(best)
+print("Accuracy of model is", best)
 
