@@ -42,9 +42,9 @@
 			<div class="rdbtn">
 			<label>Furninshing:</label>
 			<br>
-				  <input type="radio" name="Furninshing" value="Not-Furnished" checked>Not-Furnished<br> 
-				  <input type="radio" name="Furninshing" value="Semi-Furnished">Semi-Furnished<br>
-				  <input type="radio" name="Furninshing" value="Furnished">Full-Furnished
+				  <input type="radio" name="furnishing" value="Not-Furnished" checked>Not-Furnished<br> 
+				  <input type="radio" name="furnishing" value="Semi-Furnished">Semi-Furnished<br>
+				  <input type="radio" name="furnishing" value="Furnished">Full-Furnished
 			</div>
 		</div>
 
@@ -80,14 +80,15 @@
 			</div>
 			<h1>Location:</h1>
 			<div class="textbox1">
-				
 				<input type = "text" placeholder="Enter the Location" name="location" value="">
 			</div>
-
 			<!-- <a href="#" class="btn">SUBMIT</a> -->
 			<input type="submit" value="submit" class="btn" />
 		</div>
 		</form>
+		{% if result %}
+		   	<h3>The result is {{result}} Cr.</h3>
+		{% endif %}
 	</header>
 </body>
 </html>

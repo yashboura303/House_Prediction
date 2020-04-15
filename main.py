@@ -10,23 +10,20 @@ df = pd.read_csv("data_set.csv", sep=",")
 df = df.dropna(how='any',axis=0) 
 df.overlooking = pd.Categorical(df.overlooking)
 df.facing = pd.Categorical(df.facing)
-# df['overlooking_code'] = df.overlooking.cat.codes
 df['facing_code'] = df.facing.cat.codes
 dic = (dict( enumerate(df['facing'].cat.categories ) ))
 del df['overlooking']
 del df['facing']
 df.to_csv("after_changes.csv", sep=',')
 predict = "price"
-X = np.array(df.drop([predict, "overlooking_code", "facing_code"], 1))
+X = np.array(df.drop([predict], 1))
 y = np.array(df[predict])
-
 best = 0
-# for _ in range(1):
+# for _ in range(100):
 #     x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y, test_size=0.1)
-
-#     sc = StandardScaler()
-#     x_train = sc.fit_transform(x_train)
-#     x_test = sc.transform(x_test)
+#     # sc = StandardScaler()
+#     # x_train = sc.fit_transform(x_train)
+#     # x_test = sc.transform(x_test)
 #     linear = linear_model.LinearRegression()
 
 #     linear.fit(x_train, y_train)
@@ -41,5 +38,5 @@ best = 0
 # yyy=linear.predict(xxx)
 # rint(yyy)
 def predict_price(array, file='housing_prediction.pickle'):
-    loaded_model = pickle.load(open(filename, 'rb'))
+    loaded_model = pickle.load(open(file, 'rb'))
     return loaded_model.predict(array)
