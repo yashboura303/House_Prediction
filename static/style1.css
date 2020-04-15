@@ -1,0 +1,136 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Times New Roman';
+	font-size: 18px; 	
+}
+
+html{
+	height: 100%;
+	overflow: hidden;
+}
+
+body{
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	font-family: "Luna";
+}
+
+
+header{
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/static/img/1.jpg');
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh;
+}
+
+
+ul{
+	float:right;
+	list-style-type:none;
+	margin-top:25px;
+}
+
+
+
+ul li{
+	display: inline-block;
+}
+
+
+
+ul li a{
+	text-decoration:none;
+	color:white;
+	margin: 10px;
+	padding:5px 20px;
+	border:1px solid transparent;
+	transition: 0.5s ease;
+}
+
+
+ul li a:hover{
+		background-color: #fff;
+		color: #000;
+}
+
+ul li ul li{
+	display:none;
+	padding: 10px;
+	
+}
+
+ul li ul li a{
+	text-decoration:none;
+	color:white;
+	margin: -110px;
+	padding: 5px 15px;
+	border:1px solid transparent;
+	transition: 0.5s ease;
+}
+
+
+
+ul li:hover ul li{
+	display: block;
+	
+}
+
+
+.main{
+	max-width:1200px;
+	margin:auto;
+}
+
+
+.title h1{
+	position: absolute;
+	top:10%;
+	left:30%;
+	color:#fff;
+	font-size: 120px;
+}
+
+.title h2{
+	position: absolute;
+	top: 30%;
+	left: 35%;
+	color:#fff;
+	font-size: 40px;
+}
+	
+.button{
+	position: absolute;
+	top:60%;
+	left:43%;
+	tranform: translate(-50%,-50%)	
+}
+
+.btn{
+	border: 1px solid transparent;
+	padding:10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5s ease;
+}
+
+.btn:hover{
+	background-color:#fff;
+	color:#000
+}
+
+
+

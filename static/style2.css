@@ -1,0 +1,191 @@
+*{
+	margin:0px;
+    padding:0px;
+    font-family: Cambria;
+}
+::placeholder{
+	font-family: 'Times New Roman';
+	color: darkgrey;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/static/img/2.jpg');
+	height: 100vh;
+	background-size:cover;
+	background-position:center;
+}
+
+ul{
+	float:right;
+	list-style-type:none;
+	margin-top:25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration:none;
+	color:white;
+	margin: 10px;
+	padding:5px 20px;
+	border:1px solid transparent;
+	transition: 0.5s ease;
+}
+
+ul li a:hover{
+		background-color: #fff;
+		color: #000;
+}
+
+ul li ul li{
+	display:none;
+	padding: 10px;
+	
+}
+
+ul li ul li a{
+	text-decoration:none;
+	color:white;
+	margin: -103px;
+	padding: 5px 20px;
+	border:1px solid transparent;
+	transition: 0.5s ease;
+}
+
+ul li:hover ul li{
+	display: block;
+	
+}
+
+
+.main{
+	max-width:1300px;
+	margin:auto;
+}
+
+.title h1{
+	position: absolute;
+	top:5%;
+	left:20%;
+	color:#fff;
+	font-size: 20px;
+	font-family: Cambria;
+}
+
+.update-box{
+	width: 250px;
+	position: absolute;
+	top: -5%;
+	left: 50px;
+	transform: translate(70%,25%);
+	color: white;
+
+}
+
+.update-box h1{
+	float: left;
+	font-size: 20px;
+	margin-bottom: 5px;
+	padding: 5px 5px;  
+}
+
+.textbox{
+	width: 100%;
+	overflow: hidden;
+	font-size: 5px;
+	padding: 5px 0px;
+	margin: 2px 0px;
+	border-bottom: 1px solid;
+}
+
+.textbox i{
+ 	width: 26px;
+ 	float: left;
+ 	text-align: center;
+
+}
+
+.textbox input{
+ 	border: none;
+ 	outline: none;
+ 	background: none;
+ 	color: white;
+ 	font-size: 20px;
+ 	width: 80%;
+ 	float: left;
+ 	margin: 5px;
+
+}
+
+.update1-box{
+	width: 280px;
+	position: absolute;
+	top: -10%;
+	left: 50px;
+	transform: translate(250%,30%);
+	color: white;
+
+}
+
+.update1-box h1{
+	float: left;
+	font-size: 20px;
+	margin-bottom: 10px;
+	padding: 5px 5px;  
+}
+
+.textbox1{
+	width: 100%;
+	overflow: hidden;
+	font-size: 10px;
+	padding: 5px 0px;
+	margin: 2px 0px;
+	border-bottom: 1px solid;
+}
+
+.textbox1 i{
+ 	width: 26px;
+ 	float: left;
+ 	text-align: center;
+}
+
+.textbox1 input{
+ 	border: none;
+ 	outline: none;
+ 	background: none;
+ 	color: white;
+ 	font-size: 20px;
+ 	width: 80%;
+ 	float: left;
+ 	margin: 5px;
+
+}
+.rdbtn{
+	font-size: 20px;
+    font-family: 'Cambria';
+    text-align: left;
+    align-items: left;
+    
+}
+.button{
+	position: absolute;
+	font-size: 20px;
+	top:100%;
+	left:-95%;
+	transform: translate(50%,50%);
+	
+}
+
+.btn{
+	border: 1px solid transparent;
+	padding:10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5s ease;
+}
+
+.btn:hover{
+	background-color:#fff;
+	color:#000
+}
